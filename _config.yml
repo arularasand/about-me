@@ -1,1 +1,17 @@
 theme: jekyll-theme-cayman
+url: https://adeivass.dev
+title: Arularasan Deivassigamani | AI, Cloud & Engineering
+description: Technical leadership, cloud engineering, enterprise architecture, and practical AI systems.
+lang: en
+exclude:
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - index.md

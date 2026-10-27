@@ -7,26 +7,78 @@
     <link rel="icon" type="image/jpeg" href="adeivass.jpeg" />
     <meta
       name="description"
-      content="Arularasan Deivassigamani is a technical leader focused on AI, cloud engineering, software architecture, and engineering innovation."
+      content="Arularasan Deivassigamani is a Technical Lead and Full Stack Cloud Engineer at Ford Motor Company, focused on cloud architecture, practical AI, and mentoring engineering teams."
     />
+    <link rel="canonical" href="https://adeivass.dev/" />
+    <meta name="theme-color" content="#071521" />
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Arularasan" />
+    <meta property="profile:last_name" content="Deivassigamani" />
+    <meta property="og:title" content="Arularasan Deivassigamani | Technical Leadership, Cloud & AI" />
+    <meta property="og:description" content="Building thoughtful cloud and AI systems—and helping engineering teams grow." />
+    <meta property="og:url" content="https://adeivass.dev/" />
+    <meta property="og:image" content="https://adeivass.dev/adeivass.jpeg" />
+    <meta property="og:image:alt" content="Portrait of Arularasan Deivassigamani" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:site_name" content="Arularasan Deivassigamani" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arularasan Deivassigamani | Technical Leadership, Cloud & AI" />
+    <meta name="twitter:description" content="Building thoughtful cloud and AI systems—and helping engineering teams grow." />
+    <meta name="twitter:image" content="https://adeivass.dev/adeivass.jpeg" />
+    <meta name="author" content="Arularasan Deivassigamani" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Arularasan Deivassigamani",
+        "url": "https://adeivass.dev/",
+        "image": "https://adeivass.dev/adeivass.jpeg",
+        "jobTitle": "Technical Lead and Full Stack Cloud Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Ford Motor Company"
+        },
+        "sameAs": ["https://www.linkedin.com/in/adeivass/"],
+        "knowsAbout": [
+          "Cloud engineering",
+          "Software architecture",
+          "Artificial intelligence",
+          "Distributed systems",
+          "Engineering leadership"
+        ]
+      }
+    </script>
     <style>
       :root {
         --bg: #071521;
-        --bg-2: #0d1d2e;
         --panel: rgba(15, 27, 39, 0.82);
-        --panel-strong: rgba(9, 19, 31, 0.96);
         --line: rgba(145, 175, 203, 0.2);
         --text: #ebf2ff;
         --muted: #afc2d9;
         --primary: #77d7ff;
         --primary-2: #8ef0c7;
-        --accent: #98a8ff;
         --shadow: 0 18px 44px rgba(6, 12, 20, 0.24);
       }
 
       * { box-sizing: border-box; }
 
       html { scroll-behavior: smooth; }
+
+      .skip-link {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        z-index: 100;
+        padding: 10px 14px;
+        border-radius: 6px;
+        color: #062531;
+        background: var(--primary);
+        font-weight: 700;
+        transform: translateY(-160%);
+      }
+
+      .skip-link:focus { transform: translateY(0); }
 
       body {
         margin: 0;
@@ -39,6 +91,7 @@
       }
 
       a { color: inherit; }
+      :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
 
       .page-header {
         position: sticky;
@@ -488,8 +541,10 @@
       }
 
       footer {
+        max-width: 1180px;
+        margin: 0 auto;
         color: var(--muted);
-        padding: 26px 0 10px;
+        padding: 26px 24px 10px;
         text-align: center;
         font-size: 0.9rem;
       }
@@ -591,10 +646,11 @@
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="page-header">
       <div class="inner">
-        <a class="brand" href="#home" style="display: inline-flex; align-items: center; gap: 10px;"><img src="adeivass.jpeg" alt="" width="34" height="34" style="border: 2px solid rgba(119,215,255,.7); border-radius: 50%; object-fit: cover;" />Arul</a>
-        <nav>
+        <a class="brand" href="#home"><img src="adeivass.jpeg" alt="" width="32" height="32" decoding="async" />Arul</a>
+        <nav aria-label="Main navigation">
           <ul class="nav">
             <li><a href="case-studies.html">Work</a></li>
             <li class="nav-more">
@@ -617,11 +673,11 @@
       </div>
     </header>
 
-    <div class="container" id="home">
-      <section class="hero">
+    <main class="container" id="main-content">
+      <section class="hero" id="home" aria-labelledby="page-title">
         <div class="hero-copy">
           <p class="eyebrow">Technical Lead · Cloud &amp; AI</p>
-          <h1>Arularasan Deivassigamani</h1>
+          <h1 id="page-title">Arularasan Deivassigamani</h1>
           <p class="headline">I help teams build thoughtful cloud and AI systems—and grow along the way.</p>
           <p class="intro-copy">
             I am a Technical Lead and Full Stack Cloud Engineer at Ford Motor Company. I bring
@@ -640,7 +696,7 @@
         </div>
 
         <div class="visual">
-          <img class="avatar" src="adeivass.jpeg" alt="Portrait of Arularasan Deivassigamani" />
+          <img class="avatar" src="adeivass.jpeg" alt="Portrait of Arularasan Deivassigamani" width="330" height="371" fetchpriority="high" decoding="async" />
           <p class="visual-caption">Good systems are built together.</p>
         </div>
       </section>
@@ -891,6 +947,8 @@
             frameborder="0"
             width="100%"
             height="1000"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
             title="Arularasan Deivassigamani's LinkedIn profile posts"
           ></iframe>
         </div>
@@ -936,10 +994,10 @@
         </div>
       </section>
 
-      <footer>
-        © 2026 Arularasan Deivassigamani • AI, Cloud, Architecture, and Engineering Innovation
-      </footer>
-    </div>
+    </main>
+    <footer>
+      © 2026 Arularasan Deivassigamani • AI, Cloud, Architecture, and Engineering Innovation
+    </footer>
     <script>
       (() => {
         const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
